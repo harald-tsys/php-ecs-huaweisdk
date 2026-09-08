@@ -1,0 +1,28 @@
+{
+  "name": "opentelekomcloud-community/event-huawei-sdk",
+  "description": "Sample for a FunctionGraph function to start an ECS instance",
+  "license": "Apache-2.0",
+  "type": "project",
+
+  "require": {    
+    "opentelekomcloud-community/otc-functiongraph-php-runtime": "^1.0",
+    "huaweicloud/huaweicloud-sdk-php": "^3.1",
+    "guzzlehttp/guzzle": "7.15.2"    
+  },  
+  "archive": {
+    "exclude": [
+      "Makefile",
+      "resources/**",
+      "terraform/",
+      "vendor/huaweicloud/huaweicloud-sdk-php/Services/**",
+      "!vendor/huaweicloud/huaweicloud-sdk-php/Services/Ecs",
+      "!vendor/huaweicloud/huaweicloud-sdk-php/Services/Iam"
+
+      
+    ]
+  },
+  "config": {
+    "archive-format": "zip",
+    "optimize-autoloader": true
+  }
+}
